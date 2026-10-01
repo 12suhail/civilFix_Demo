@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue | CivilFix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="brand" href="index.html">
+            <img src="civilfix-logo.png" alt="CivilFix">
+        </a>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a class="highlight" href="report.html">Report</a>
+            <a href="issues.html">Issues</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <span class="tag">REPORT A PROBLEM</span>
+        <h1>Tell us what needs attention.</h1>
+        <p>Fill in the simple form below to report a civic issue.</p>
+    </section>
+    <section class="form-section">
+        <form id="reportForm" class="form-card" action="user_save.php" method="POST">
+            <input type="hidden" name="form_type" value="report">
+            <div class="form-grid">
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="name" required placeholder="Your name">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" required placeholder="you@example.com">
+                </div>
+            </div>
+            <label>Issue Type</label>
+            <select name="issue" required>
+                <option value="">Select an issue</option>
+                <option value="Pothole">Pothole</option>
+                <option value="Garbage">Garbage</option>
+                <option value="Street Light">Street Light</option>
+                <option value="Water">Water</option>
+                <option value="Drainage">Drainage</option>
+                <option value="Other">Other</option>
+            </select>
+            <label>Location</label>
+            <input type="text" name="location" required placeholder="Where is the problem?">
+            <label>Description</label>
+            <textarea name="description" required placeholder="Describe the problem..."></textarea>
+            <button class="button" type="submit">
+                Submit Report
+            </button>
+            <p id="formMessage" class="success"></p>
+        </form>
+    </section>
+
+    <footer>
+        <div>
+            <strong>CivilFix</strong>
+            <p>Report civic problems. Improve your community.</p>
+        </div>
+        <p>© 2026 CivilFix</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

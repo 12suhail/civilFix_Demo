@@ -17,9 +17,23 @@ a {
     text-decoration: none;
 }
 
+.icons {
+     width:27px;
+}   
+
+.cf-code {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px 8px;
+    background: #e2e2e2;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .navbar {
     height: 74px;
-    background: rgb(241, 239, 239);
+    background: rgb(255, 255, 255);
     border-bottom: 1px solid #e5ebe7;
     display: flex;
     align-items: center;
@@ -152,6 +166,9 @@ a {
     border-radius: 22px;
     padding: 35px;
     box-shadow: 0 20px 50px rgba(28, 67, 47, .09);
+    background-image : url(front_page.jpeg);
+    height: 350px;
+    width: 350px;
 }
 
 .hero-icon {
@@ -164,7 +181,10 @@ a {
     margin-bottom: 8px;
 }
 
-.hero-card p,
+.hero-card p{
+    color:#2c312e;
+}
+
 .card p,
 .page-header p,
 .about-box p,

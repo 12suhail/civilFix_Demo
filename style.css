@@ -449,17 +449,75 @@ textarea:focus {
 footer {
     background: #14251c;
     color: white;
-    padding: 30px 7%;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
 }
 
-footer p {
+.footers {
+    background: #14251c;
+    color: white;
+    padding: 5px 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footers p {
     color: #aebdb4;
     font-size: 13px;
 }
 
+.footer-brand strong {
+    font-size: 20px;
+    color: white;
+}
+
+.footer-brand p:first-of-type {
+    margin-top: 6px;
+}
+
+.footer-brand p:last-of-type {
+    font-size: 10px;
+    line-height: 1.6;
+    margin-top: 7px;
+}
+
+.footer-column > p {
+    font-size: 18px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.footer-column a {
+    display: block;
+    color: grey;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+
+.footer-column span {
+    display: inline-block;
+    color: grey;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+.copyright {
+    border-top: 1px solid #304239;
+    padding: 8px 7%;
+}
+
+.copyright p {
+    margin: 0;
+    color: #aebdb4;
+    font-size: 12px;
+}
 /* submit page css */
 .success-body {
     background-color: #FDFDF4;
